@@ -12,10 +12,6 @@ export const Footer = ({ showControls }: { showControls?: boolean }) => {
       console.log("project", project);
       await project.ready;
 
-      // if (!project.isReady) return;
-
-      console.log("isPlaying", isPlaying, sheet);
-
       if (isPlaying) {
         sheet.sequence.play({ iterationCount: Infinity, range: [0, 2] });
       } else {
@@ -66,7 +62,6 @@ export const Footer = ({ showControls }: { showControls?: boolean }) => {
             <input
               type="checkbox"
               onChange={(e) => {
-                console.log("SETTING IS PLAYING", e.target.checked);
                 setIsPlaying(e.target.checked);
               }}
             />

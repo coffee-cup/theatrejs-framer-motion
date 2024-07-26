@@ -42,6 +42,47 @@ import state from "./states/state1.json";
 </AnimationContextProvider>
 ```
 
+## Animating more values
+
+Currently only x, y, and opacity values are animatable. You can easily animate more values by
+- adding them as a theatre prop
+- Creating and updating a motion value for the new value
+- Return the new motion value as part of the values object
+
+Everything is defined in this hook
+
+```tsx
+export const useTheaterFramerObject = (objectName: string) => {
+  const props = useMemo(
+    () =>
+      ({
+        x: 0,
+        y: 0,
+        opacity: types.number(1, { range: [0, 1] }),
+      } as UnknownShorthandCompoundProps),
+    []
+  );
+
+  const obj = useTheaterObject(objectName, props);
+
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const opacity = useMotionValue(1);
+
+  useEffect(() => {
+    return obj.onValuesChange((values) => {
+      x.set(values.x);
+      y.set(values.y);
+      opacity.set(values.opacity);
+    });
+  }, [obj]);
+
+  const values = { x, y, opacity };
+
+  return { values };
+};
+```
+
 ## Things to note
 
 - The Theatre studio is initialized globally when any page loads. Once loaded it will use the animations defined in local storage for the project/sheet. To ensure the values from the `state.json` file are used, comment out [this line](https://github.com/coffee-cup/theatrejs-framer-motion/blob/main/src/App.tsx#L15)

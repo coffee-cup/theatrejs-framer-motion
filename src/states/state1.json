@@ -1,0 +1,158 @@
+{
+  "sheetsById": {
+    "Scene 1": {
+      "staticOverrides": {
+        "byObject": {
+          "box3": {
+            "y": 0
+          },
+          "box1": {}
+        }
+      },
+      "sequence": {
+        "subUnitsPerUnit": 30,
+        "length": 10,
+        "type": "PositionalSequence",
+        "tracksByObject": {
+          "box3": {
+            "trackData": {},
+            "trackIdByPropPath": {}
+          },
+          "box1": {
+            "trackData": {
+              "RDJWkOZdAp": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "box1:[\"x\"]",
+                "keyframes": [
+                  {
+                    "id": "IUrwWFl-FF",
+                    "position": 0,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 0
+                  },
+                  {
+                    "id": "5ttwid-d6i",
+                    "position": 2,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 300
+                  }
+                ]
+              }
+            },
+            "trackIdByPropPath": {
+              "[\"x\"]": "RDJWkOZdAp"
+            }
+          },
+          "box2": {
+            "trackData": {
+              "ZxdaGH9eRD": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "box2:[\"x\"]",
+                "keyframes": [
+                  {
+                    "id": "cRQznGHiB6",
+                    "position": 0,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 0
+                  },
+                  {
+                    "id": "kqxgaoQzE-",
+                    "position": 1,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 300
+                  },
+                  {
+                    "id": "PLTV5VGFL6",
+                    "position": 1.967,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 0
+                  }
+                ]
+              },
+              "mkQWsIxGdM": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "box2:[\"opacity\"]",
+                "keyframes": [
+                  {
+                    "id": "8MaYNChUnX",
+                    "position": 0,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 1
+                  },
+                  {
+                    "id": "arYt3gKdjk",
+                    "position": 1,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 0.1
+                  },
+                  {
+                    "id": "BUSiDyfcIZ",
+                    "position": 2,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 1
+                  }
+                ]
+              }
+            },
+            "trackIdByPropPath": {
+              "[\"x\"]": "ZxdaGH9eRD",
+              "[\"opacity\"]": "mkQWsIxGdM"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "1OJA1S3I5mLGzeHY"
+  ]
+}
